@@ -9,6 +9,6 @@ doc = ezdxf.new()
 msp = doc.modelspace()
 
 # Guardar el archivo DXF
-doc.saveas("nuevo.dxf")
+doc.saveas("test.dxf")
 print("Archivo DXF creado correctamente")
 

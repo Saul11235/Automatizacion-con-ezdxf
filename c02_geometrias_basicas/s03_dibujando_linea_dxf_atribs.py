@@ -10,10 +10,15 @@ doc = ezdxf.new()
 # Crear modelspace
 msp = doc.modelspace()
 
-# dibujarndo lineas respecto a coordenadas
-msp.add_line( [0,3] , [7,7] )
-msp.add_line( [7,7] , [7,3] )
-msp.add_line( [7,3] , [0,3] )
+# dibujarndo lineas 
+msp.add_line( [1,1] , [5,5] , dxfattribs = {"color":3} )
+
+# 
+# Nota: dxfatribs es un atributo de un diccionario
+#       indicando con los atributos de un objeto
+#
+#       En este caso color 3 = verde
+#
 
 # Guardar el archivo DXF
 doc.saveas("test.dxf")

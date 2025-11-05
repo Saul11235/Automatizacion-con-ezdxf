@@ -1,5 +1,5 @@
 #  
-# Ejemplo 2 - dibujo simple
+# Ejemplo 1 - dibujo simple
 #
 
 import ezdxf
@@ -10,11 +10,8 @@ doc = ezdxf.new()
 # Crear modelspace
 msp = doc.modelspace()
 
-# dibujarndo lineas respecto a coordenadas
-msp.add_line( [0,3] , [7,7] )
-msp.add_line( [7,7] , [7,3] )
-msp.add_line( [7,3] , [0,3] )
-msp.add_text("Hola")
+# dibujarndo lineas 
+msp.add_line( [1,1] , [5,5] )
 
 # Guardar el archivo DXF
 doc.saveas("test.dxf")

@@ -1,3 +1,4 @@
 *.swp
 *.pyc
-*.dxf
+*/test.dxf
+*/nuevo.dxf
