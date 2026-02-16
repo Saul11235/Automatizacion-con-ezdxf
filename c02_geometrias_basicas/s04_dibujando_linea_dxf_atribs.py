@@ -1,17 +1,13 @@
 #  
-# Ejemplo 1 - dibujo simple
+# Ejemplo dxfattribs
 #
+# https://ezdxf.readthedocs.io/en/stable/concepts/linetypes.html
+# https://ezdxf.readthedocs.io/en/stable/concepts/lineweights.html
 
 import ezdxf
 
-# nuevo documento DXF
 doc = ezdxf.new() 
-
-# Crear modelspace
 msp = doc.modelspace()
-
-# dibujarndo lineas 
-msp.add_line( [1,1] , [5,5] , dxfattribs = {"color":3,"lineweight":40,"linetype":"DASHED"} )
 
 # ------------------------------------
 # 
@@ -25,6 +21,17 @@ msp.add_line( [1,1] , [5,5] , dxfattribs = {"color":3,"lineweight":40,"linetype"
 #      linetype DASHED = linea punteada
 #
 # ------------------------------------
+
+
+# dibujarndo lineas  -------------
+msp.add_line( [1,1] , [5,5] , 
+             dxfattribs = {
+                 "color":3,
+                 "lineweight":40,
+                 "linetype":"DASHED"
+                 } 
+             )
+#----------------------------------
 
 # Guardar el archivo DXF
 doc.saveas("test.dxf")

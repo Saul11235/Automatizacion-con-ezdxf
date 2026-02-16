@@ -1,4 +1,7 @@
 *.swp
 *.pyc
 */test.dxf
+*/#test.dxf
 */nuevo.dxf
+*/#nuevo.dxf
+ots/
