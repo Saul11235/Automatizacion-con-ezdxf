@@ -11,11 +11,11 @@ msp = doc.modelspace()
 
 #------------------------------------------------------
 #  Creando un bloque
-block = doc.blocks.new(name="MI_BLOQUE")
+mi_bloque = doc.blocks.new(name="MI_BLOQUE")
 
 #  creando contenido del bloque
-block.add_lwpolyline( [ (0,0),(20,0),(20,10),(0,10),(0,0)], dxfattribs={"color": 3} )
-block.add_line      ( (0,0),  (20,10),  dxfattribs={"color":1} )
+mi_bloque.add_lwpolyline( [ (0,0),(20,0),(20,10),(0,10),(0,0)], dxfattribs={"color": 3} )
+mi_bloque.add_line      ( (0,0),  (20,10),  dxfattribs={"color":1} )
   
 #------------------------------------------------------
 #  colocando instancias del bloque en el modelspace

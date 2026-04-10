@@ -15,12 +15,12 @@ msp = doc.modelspace()
 # en este caso tendremos un conjunto de puntos 
 
 puntos =  [
-        [0,100],
-        [50,250],
-        [150,200],
-        [300,200], ##
-        [200,250],
-        [175,50],
+        [0   ,100 ],
+        [50  ,250 ],
+        [150 ,200 ],
+#        [300 ,200 ], ##
+        [200 ,100 ],
+        [175 ,50  ],
     ]
 
 #------------------------------------------------------
@@ -70,6 +70,7 @@ def calcular_centro(puntos):
 # funcion para ajustar coordenadas de puntos.
 
 def ajustar_coordenads(puntos,offset_x=0,offset_y=0):
+    # devuelve coordenadas como si estuvieran cerca al origen de coordenadas
     min_x = puntos[0][0]
     min_y = puntos[0][1]
     for pto in puntos: min_x=min(min_x,pto[0]);min_y=min(min_y,pto[1])
@@ -79,6 +80,7 @@ def ajustar_coordenads(puntos,offset_x=0,offset_y=0):
     return ajustados
 
 def dimensiones(puntos):
+    # devuelve ancho y alto del poligono
     puntos = ajustar_coordenads(puntos)
     max_x  = puntos[0][0] 
     max_y  = puntos[0][1] 
@@ -174,7 +176,7 @@ for pto in puntos:
             )
 
 #------------------------------------------------------
-# colocando vista viewport al dibujo
+#2026-03-14 13-48-47 colocando vista viewport al dibujo
 
 vports   = doc.viewports.get('*ACTIVE')
 if vports: vport = vports[0] if isinstance(vports, list) else vports

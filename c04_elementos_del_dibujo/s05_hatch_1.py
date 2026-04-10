@@ -1,4 +1,3 @@
-
 #
 # Ejemplo  hatch (sin polilinea visible)
 #
@@ -17,20 +16,19 @@ puntos = [(10, 10),(40, 10),(50, 30),(30, 50),(10,30),]
  
 #------------------------------------------------------
 #  creando el hatch
-hatch = msp.add_hatch()
+mi_objeto_hatch = msp.add_hatch()
 
 #------------------------------------------------------
 #  agregando el contorno directamente al hatch
-hatch.paths.add_polyline_path(
+mi_objeto_hatch.paths.add_polyline_path(
     puntos,
     is_closed=True
 )
 
 #------------------------------------------------------
 #  configurando el patron
-hatch.set_solid_fill()
+mi_objeto_hatch.set_solid_fill()
 
 #------------------------------------------------------
-
 doc.saveas("test.dxf")
 print("Archivo DXF creado correctamente")

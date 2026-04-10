@@ -12,7 +12,7 @@ msp = doc.modelspace()
 
 #------------------------------------------------------
 #
-#  puntos de la polilinea con bulge
+#  puntos de la polilinea con bulge (curvatura)
 #  cada tupla es (x, y, bulge)
 #  bulge > 0: curva hacia la izquierda
 #  bulge < 0: curva hacia la derecha

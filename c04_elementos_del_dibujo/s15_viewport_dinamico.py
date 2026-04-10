@@ -10,30 +10,27 @@ msp = doc.modelspace()
 #------------------------------------------------------
 # definiendo coordenadas a hacer encuadre
 #
-#                     x2 y2
+#    +-------------------+ x2 y2 
+#    |                   |
+#    |                   |
+#    |       xc yc       |  h viewport
+#    |                   |  
+#    |                   |
+#    |                   |
 #    +-------------------+
-#    |                   |
-#    |                   |
-#    |       xc yc       |
-#    |                   |
-#    |                   |
-#    |                   |
-#    +-------------------+
-#   x1 y1
+#    x1,y1
 
-x1,y1  = 8882,33
+xc,yc  = 12292,12332
+hview  = 250
 
-lado1 = 500
-lado2 = 200
-
-x2,y2  =  x1+lado1, y1+lado2
-
+#------------------------------------------------------
+x1,y1  = xc-hview/2,yc-hview/2
+x2,y2  = xc+hview/2,yc+hview/2
 
 #------------------------------------------------------
 # realizando dibujo
 
 doc.layers.new(name="miCapa", dxfattribs={"color":4,"lineweight":200} )
-       
 msp.add_lwpolyline( [[x1,y1],[x1,y2],[x2,y2],[x2,y1],[x1,y1],[x2,y2],[x2,y1],[x1,y2]] ,
                    dxfattribs = {"layer":"miCapa","closed":True} )
 
@@ -46,13 +43,11 @@ if vports: vport = vports[0] if isinstance(vports, list) else vports
 else     : vport = doc.viewports.new('*ACTIVE')
 
 #
-# Nota: estas son aproximaciones testeadas en LibreCAD
-#       los viewport utilizan otro sistema de coordenadas, distinto a las coordenadas
-#       de los objetos, esto es parte del formato DXF
+# Nota: testeado en LibreCAD
 #
-vport.dxf.center =  ((x1+x2)/4+57.25, (y1+y2)/4+25.88)
+vport.dxf.center =  ( xc/2 +0.5767*hview -0.06826, yc/2 +0.25901*hview -0.021 )
 vport.dxf.target =  0,0,0
-vport.dxf.height =  (y2-y1)*1.5
+vport.dxf.height =  hview*1.05
 
 #------------------------------------------------------
 # muestra las coordenadas del punto

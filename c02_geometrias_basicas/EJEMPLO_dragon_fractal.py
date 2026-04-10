@@ -40,7 +40,7 @@ def dragon_fractal(puntos):
     return respuesta
 
 puntos           =  [[0,0],[2,0]]
-nro_iteraciones  =  4
+nro_iteraciones  =  14
 
 for _ in range(nro_iteraciones): puntos = dragon_fractal(puntos)
 
