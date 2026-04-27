@@ -3,7 +3,7 @@
 Ejemplos vistos en la serie de youtube: Dibujo automatizado con ezdxf.
 visto en el canal de Edwin Saul
 
-[![Video en YouTube](https://img.youtube.com/vi/ej71eUNL7Ik/0.jpg)](https://www.youtube.com/watch?v=ej71eUNL7Ik)
+[![Video en YouTube](https://img.youtube.com/vi/B93-WtRgsAE/0.jpg)](https://www.youtube.com/watch?v=B93-WtRgsAE)
 
 Enlaces de interés
 
