@@ -30,7 +30,7 @@ msp.add_lwpolyline(
 msp.add_spline(
     puntos,
     dxfattribs={
-        "color": 4  # azul (ACI)
+        "color": 4  # cyan (ACI)
     }
 )
 
