@@ -66,12 +66,12 @@ for x in range(40,180,20):crear_mtxt(txt,x, 80)
 #------------------------------------------------------
 # dibujarndo lineas respecto a coordenadas
 
-msp.add_line([100,65], [150,65], dxfattribs={"layer":"dibujos"})  
-msp.add_line([100,66], [150,66], dxfattribs={"layer":"dibujos"})  
-msp.add_line([100,67], [150,67], dxfattribs={"layer":"dibujos"})  
-msp.add_line([100,68], [150,68], dxfattribs={"layer":"MI_CAPA"})  
-msp.add_line([100,69], [150,69], dxfattribs={"layer":"MI_CAPA"})  
-msp.add_line([100,70], [150,70], dxfattribs={"layer":"MI_CAPA"})  
+msp.add_line([100,60], [150,60], dxfattribs={"layer":"dibujos"})  
+msp.add_line([100,61], [150,61], dxfattribs={"layer":"dibujos"})  
+msp.add_line([100,62], [150,62], dxfattribs={"layer":"dibujos"})  
+msp.add_line([100,63], [150,63], dxfattribs={"layer":"MI_CAPA"})  
+msp.add_line([100,64], [150,64], dxfattribs={"layer":"MI_CAPA"})  
+msp.add_line([100,65], [150,65], dxfattribs={"layer":"MI_CAPA"})  
 msp.add_lwpolyline([[100, 30], [120, 50], [140, 30]] , dxfattribs={"layer":"dibujos"})
 msp.add_lwpolyline([[100, 40], [120, 60], [140, 40]], close=True , dxfattribs={"layer":"dibujos"})
 msp.add_point([120, 30])     

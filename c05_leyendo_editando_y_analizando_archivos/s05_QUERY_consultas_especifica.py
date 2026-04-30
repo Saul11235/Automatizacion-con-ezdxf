@@ -16,43 +16,25 @@ for obj in msp.query('LINE'):              # <- test query
     print(obj)
     print("\t\t Layer:",obj.dxf.layer)
     print("\t\t Color:",obj.dxf.color)
-
+#
 # -----------------------------------
 
-titulo('LINE CIRCLE TEXT')
+titulo('LINE[layer=="dibujos"]')
 
-for obj in msp.query('LINE CIRCLE TEXT'):  # <- test query
+for obj in msp.query('LINE[layer=="dibujos"]'):              # <- test query
     print(obj)
     print("\t\t Layer:",obj.dxf.layer)
     print("\t\t Color:",obj.dxf.color)
-
+#
 # -----------------------------------
 
-titulo('*')
+titulo('LINE[layer!="dibujos"]')
 
-for obj in msp.query('*'):                 # <- test query
+for obj in msp.query('LINE[layer!="dibujos"]'):              # <- test query
     print(obj)
     print("\t\t Layer:",obj.dxf.layer)
     print("\t\t Color:",obj.dxf.color)
-
-# -----------------------------------
-
-titulo('*')
-
-for obj in msp.query('*'):                 # <- test query
-    print(obj)
-    print("\t\t Layer:",obj.dxf.layer)
-    print("\t\t Color:",obj.dxf.color)
-
-# -----------------------------------
-
-titulo('* !LINE !TEXT')
-
-for obj in msp.query('* !LINE !TEXT'):                 # <- test query
-    print(obj)
-    print("\t\t Layer:",obj.dxf.layer)
-    print("\t\t Color:",obj.dxf.color)
-
+#
 # -----------------------------------
 
 

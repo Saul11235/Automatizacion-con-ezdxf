@@ -31,13 +31,6 @@ for obj in msp.query('*'):                 # <- test query
 
 # -----------------------------------
 
-titulo('*')
-
-for obj in msp.query('*'):                 # <- test query
-    print(obj)
-
-# -----------------------------------
-
 titulo('* !LINE !TEXT')
 
 for obj in msp.query('* !LINE !TEXT'):                 # <- test query
