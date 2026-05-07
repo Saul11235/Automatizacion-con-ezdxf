@@ -2,6 +2,8 @@
 
 Genera un **mapa de curvas de nivel** en DXF a partir de una nube de puntos `(x, y, z)`. Interpola la superficie y exporta cada curva como una polilínea nativa de DXF.
 
+[![Video en YouTube](https://img.youtube.com/vi/I2OK0oglYKg/0.jpg)](https://www.youtube.com/watch?v=I2OK0oglYKg)
+
 ## Archivos
 
 | Archivo | Descripcion |

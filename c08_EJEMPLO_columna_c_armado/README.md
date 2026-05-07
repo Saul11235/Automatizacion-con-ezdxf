@@ -1,6 +1,8 @@
-# Columna de concreto armado multi-piso
+# Columna de concreto armado 
 
 Dibuja una **columna rectangular** de concreto armado en dos representaciones: seccion transversal y desarrollo longitudinal completo (desde zapata hasta el ultimo nivel).
+
+[![Video en YouTube](https://img.youtube.com/vi/K14Vl-iXSqY/0.jpg)](https://www.youtube.com/watch?v=K14Vl-iXSqY)
 
 ## Archivos
 

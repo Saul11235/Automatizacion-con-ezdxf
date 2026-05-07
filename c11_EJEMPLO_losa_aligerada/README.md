@@ -1,6 +1,8 @@
-# Losa aligerada unidireccional
+# Losa aligerada
 
-Dibuja una **losa aligerada unidireccional** en dos vistas: planta (desde arriba) y corte transversal (perpendicular a las viguetas).
+Dibuja una **losa aligerada** en dos vistas: planta (desde arriba) y corte transversal (perpendicular a las viguetas).
+
+[![Video en YouTube](https://img.youtube.com/vi/bon8Zie461k/0.jpg)](https://www.youtube.com/watch?v=bon8Zie461k)
 
 ## Archivos
 

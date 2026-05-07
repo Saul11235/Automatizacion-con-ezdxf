@@ -1,6 +1,8 @@
-# Viga continua de concreto armado
+# Viga de concreto armado
 
 Dibuja una **viga continua** de concreto armado apoyada en multiples columnas, en dos representaciones: seccion transversal y desarrollo longitudinal con zonas de confinamiento.
+
+[![Video en YouTube](https://img.youtube.com/vi/1oN2CoAcDDs/0.jpg)](https://www.youtube.com/watch?v=1oN2CoAcDDs)
 
 ## Archivos
 

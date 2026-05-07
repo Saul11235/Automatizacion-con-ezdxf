@@ -2,6 +2,8 @@
 
 Dibuja una **escalera de losa inclinada** de concreto armado en dos vistas: planta (vista desde arriba) y corte longitudinal.
 
+[![Video en YouTube](https://img.youtube.com/vi/jwhcYWN-CSs/0.jpg)](https://www.youtube.com/watch?v=jwhcYWN-CSs)
+
 ## Archivos
 
 | Archivo | Descripcion |
