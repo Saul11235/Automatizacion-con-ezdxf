@@ -342,6 +342,6 @@ class Planta_zapata:
 
 if __name__ == '__main__':
     obj = Planta_zapata()
-    obj._test_1()   # test 1
-    obj._test_2()   # test 2
+    #obj._test_1()   # test 1
+    #obj._test_2()   # test 2
     obj._test_3()   # test 3
